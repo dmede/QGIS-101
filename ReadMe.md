@@ -334,24 +334,27 @@ This URL provides access to the georeferenced map outside of the DavidRumsey.com
 Our goal in this workshop is to explore the cholera outbreak of 1854 and determine whether there is evidence that the Broad Street pump is the source of the outbreak. To do this we want to spatially allocate all of the death addresses in our data set to the water pump that they are nearest. Often the data that we need for our analysis doesn't exist in the format that we need it in. In this section we will use John Snow's original map of the 1854 cholera outbreak as a source for the locations of the water pumps in our analysis. 
 
 1. On the **Main Menu**, go to **Raster>Georeferencer** to open the **GDAL Georeferencer**
+
+Note: If you don’t see **Georeferencer** under the Raster menu (or its grayed out). Go to Plugins > Manage and Install Plugins. Find the entry for **Georefrencer GDAL** and check its box.
+
 2. Click on the **Open Raster** button  ![](./media/openraster.png) and browse to the **/data/** folder, select the **snow_map.png** and click **Open**
 3. You should be prompted to set the **Coordinate Reference System** of the map you are adding. Since the map we are georeferencing doesn't have one, use the **CRS** of the Map Document, instead, which is **EPSG:32630**, which is the CRS we want the map to end up in.  
-3. Use the Zoom tool to Zoom to the upper-right corner of the John Snow Map, around the SOHO Square
-4. Click on the Add Point tool ![](./media/addgcp.png) and click on the upper right corner of the outside boundary of SOHO Square, as shown below:  
+4. Use the Zoom tool to Zoom to the upper-right corner of the John Snow Map, around the SOHO Square
+5. Click on the Add Point tool ![](./media/addgcp.png) and click on the upper right corner of the outside boundary of SOHO Square, as shown below:  
 ![](./media/addpointdialog-drop-shadow.png)  
 
-5. Click on the **From Map Canvas** button to switch back to the main QGIS Window
-6. Zoom to the same are of your Map Canvas, *preferably using your mouse wheel or keyboard shortcuts so you don't deactivate the Add Point tool, but you can always go back to the Georeferencer window and reactivate it* 
-7. Place **Ground Control Points** in each corner of the map, switching between the two windows using the **Add Point** tool, as needed. Add a final point somewhere near the center of the map.
+6. Click on the **From Map Canvas** button to switch back to the main QGIS Window
+7. Zoom to the same are of your Map Canvas, *preferably using your mouse wheel or keyboard shortcuts so you don't deactivate the Add Point tool, but you can always go back to the Georeferencer window and reactivate it* 
+8. Place **Ground Control Points** in each corner of the map, switching between the two windows using the **Add Point** tool, as needed. Add a final point somewhere near the center of the map.
 ![](./media/georeferencer.png) 
  
-8. Click on the **Transformation Settings** button ![](./media/transform.png) and examine the settings. The defaults should be fine, as follows:  
+9. Click on the **Transformation Settings** button ![](./media/transform.png) and examine the settings. The defaults should be fine, as follows:  
 
 | Setting | Value |
 |---------------------:|--------------------|
 | Transformation Type: | Polynomial 1 |
 | Resample Method: | Nearest Neighbor |
-| Target SRS: | EPSG:4326 - WGS 84 |  
+| Target SRS: | EPSG:32630 - UTM 30N |  
 
 9. Click on the **Start Georeferencing** button ![](./media/starttransform.png) to start the georeferencing of your image and add it to the Map Canvas.
 10. Close the Georeferencer and click OK when prompted to save your **GCP** points.
