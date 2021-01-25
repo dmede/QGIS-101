@@ -430,7 +430,7 @@ Now that you have created the Voronoi polygon layer, you will “allocate” eac
 
 1. On the pull-down menu go to menu go to **Vector \> Data Management Tools \> Join attributes by location**
 
-1.  Select **Death Addresses** as the Target vector layer and
+1.  Select **Death Addresses** as the Input vector layer and
     **Water_Pump_Voronoi** as the Join vector layer.
 
 2.  **Click Browse** to save the **Output GeoJSON** as **Deaths_Allocated** in
