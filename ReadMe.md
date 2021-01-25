@@ -409,7 +409,7 @@ Thiessen polygons allocate space in an area of interest to a single feature per 
 2. Go to the **Processing Toolbox Window** and change the view from **Simplified Interface** to **Advanced Interface.**
 3. Search for **Voronoi.**
 4. **Double–click** the **Voronoi polygons** tool under **Grass commands.**
-5. On the v.voronoi tool window input the select **Water Pumps** as the **Input points layer.**  
+5. On the v.voronoi tool window select **Water Pumps** as the **Input points layer.**  
 ![](media/image004-drop-shadow.png)
 
 6. On **Grass region, click the 3 dots** and select **Use layer/canvas extent.**
