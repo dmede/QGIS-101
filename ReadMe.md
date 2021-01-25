@@ -372,7 +372,7 @@ If the last section didn't go well, add the ```John_Snow_Map.tif``` from the **/
 | File encoding: | system |
 | Geometry type: | Point |
 | Additional dimensions: | None |
-| CRS: | EPSG:4326 - WGS 84 |
+| CRS: | EPSG:32630 - UTM 30N |
 
 ![](./media/newshapefile.png)
 
