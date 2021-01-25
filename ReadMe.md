@@ -218,9 +218,10 @@ You should now see that the base map and study area layer in the map canvas have
 
 Often the data sets that you want to work with will not come as spatial data sets. In this step we will add a table of data that contains fields with the latitude and longitude coordinates of the deaths addresses we want to analyze.
 
-1. Click on the **Add Delimited Text Layer** button ![](./media/delimitedlayer.png)to open the Data Source Manager dialog.
-2. For **File Name**, browse to the **data** folder and select the **deathAddresses.csv**
-3. Set the remainder of the settings as follows, and click **Add & Close** to import the layer:    
+1. In the Data Source Manager Toolbar, select the ‘Open Data Source Manager’ icon.
+2. Click on the **Delimited Text** button ![](./media/delimitedlayer.png)to open the Add Delimited Text dialog.
+3. For **File Name**, browse to the **data** folder and select the **deathAddresses.csv**
+4. Set the remainder of the settings as follows, and click **Add & Close** to import the layer:    
 
 | setting | value |
 |--------------------------:|--------------------------------------------------------------------|
@@ -242,7 +243,7 @@ Proportional symbols on Death Addresses
 | setting | value |
 |------------------:|--------------------------------|
 | Symbology Type:  | Graduated |
-| Column: | Num_Cases |
+| Value: | Num_Cases |
 | Symbol: | *click to change the color if you like* |
 | Legend Precision: | 1 |
 | Method: | Size |
